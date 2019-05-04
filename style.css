@@ -1,0 +1,55 @@
+body, ul {
+    margin: 0;
+    padding: 0; /*убрали отступы*/
+}
+li {
+    list-style: none; 
+}
+header {
+    border-bottom: 2px solid grey; /*нижняя стрн*/
+    padding:15px 0px;
+}
+header {
+    margin: 0; /*отступ*/
+}
+#header-wrap {
+    max-width: 1000px; /*максимальная ширина*/
+    margin: auto; /*шапка по центру*/
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header ul {
+    display: flex;
+    lign-items: center;
+    flex-wrap: wrap; /*чтоб контейнеры меню были один под одним при адативе*/
+}
+header ul li a {
+    display: flex;
+    padding: 10px 15px;
+    margin: 5px;
+    background: #00b7ffb8;
+    color:#000000d9;
+    margin: 15px;
+    text-decoration: none; /*убать нижнее подчеркивание из гиперссылок*/
+    text-transform: uppercase; /*шрифт капсом*/
+    font-weight: bold; /*жирный шрифт*/
+    font-size: 17px; /*размер шрифта*/
+    display: block; /*чтоб строчный эллемент ввёд себя как блок*/
+}
+header ul li a:hover { /*стиль при наведние на блок в меню*/
+background: rgb(205, 240, 245);
+}
+#logo img {
+    max-width:100px;
+}
+
+@media(max-width: 800px) {   /*для всего что будет большо 80 пикселей, стиль медиа не будет работать*/
+    header ul {  /*801 пиксель и более - этот стиль-родитель*/
+        width: 100%;
+    }
+    header ul li, #logo {
+        width: 100%;
+        text-align: center; /*текс в кнопке будет по центру, если кнопка=тип блок*/
+    }
+}
