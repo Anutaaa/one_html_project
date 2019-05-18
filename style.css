@@ -99,7 +99,7 @@ background: rgb(205, 240, 245);
 
 
 .list {
-    box-shadow: 0 0 6px 0px #3b6079;
+    box-shadow: 0 0 6px 3px #3b6079;
     padding: 10px;
     margin-bottom: 15px;
 }
