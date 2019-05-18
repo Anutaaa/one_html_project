@@ -22,7 +22,6 @@ header {
 
 header ul {
     display: flex;
-    lign-items: center;
     flex-wrap: wrap; /*чтоб контейнеры меню были один под одним при адативе*/
 }
 header ul li a {
