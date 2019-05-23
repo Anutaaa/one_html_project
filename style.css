@@ -119,6 +119,18 @@ background: rgb(205, 240, 245);
    }
 }
 
+footer {
+    background: #000000d9;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+}
+
 @media(max-width: 800px) {   /*для всего что будет большо 80 пикселей, стиль медиа не будет работать*/
     header ul, #content, #sidebar {  /*801 пиксель и более - будет работать этот стиль-родитель*/
         width: 100%;
