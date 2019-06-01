@@ -1,0 +1,149 @@
+body, ul {
+    margin: 0;
+    padding: 0; /*убрали отступы*/
+}
+
+li {
+    list-style: none; 
+}
+header {
+    border-bottom: 2px solid grey; /*нижняя стрн*/
+    padding:15px 0px;
+}
+header {
+    margin: 0; /*отступ*/
+}
+#header-wrap {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+header ul {
+    display: flex;
+    flex-wrap: wrap; /*чтоб контейнеры меню были один под одним при адативе*/
+}
+header ul li a {
+    display: flex;
+    padding: 10px 15px;
+    margin: 5px;
+    background: #00b7ffb8;
+    color:#000000d9;
+    margin: 15px;
+    text-decoration: none; /*убать нижнее подчеркивание из гиперссылок*/
+    text-transform: uppercase; /*шрифт капсом*/
+    font-weight: bold; /*жирный шрифт*/
+    font-size: 17px; /*размер шрифта*/
+    display: block; /*чтоб строчный эллемент ввёд себя как блок*/
+}
+header ul li a:hover { /*стиль при наведние на блок в меню*/
+background: rgb(205, 240, 245);
+}
+#logo img {
+    max-width:100px;
+}
+/*
+    Content styles (11.05)
+ */
+ #content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+#content {
+   width: 70%;
+   padding: 15px 15px 15px 0;
+}
+
+#sidebar {
+   width: 30%;
+   padding: 15px 0 15px 15px;
+}
+
+#content,#sidebar {
+   box-sizing: border-box;
+}
+
+.border {
+   box-shadow: 0 0 3px 2px #000000d9;
+   padding: 15px;
+   min-height: 600px;
+}
+
+.container {
+    max-width: 1000px; /*максимальная ширина*/
+    margin: auto; /*шапка по центру*/
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+} 
+#gallery .article {
+    width: 50%;
+}
+#gallery img{
+    max-width: 100%;
+}
+#gallery .article-wrap {
+    margin: 15px;
+    box-shadow: 0 0 6px 3px #3b6079;
+    padding: 10px;
+    text-align:center; /*всё цетрует внутри блока*/
+}
+#gallery .article-wrap h4 {
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    font-size:22px;
+}
+
+
+.list {
+    box-shadow: 0 0 6px 3px #3b6079;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.list a {
+    text-decoration: none;
+    color: black;
+}
+
+.list h3 {
+    margin: 0 0 5px 0;
+}
+
+@media(max-width: 1060px) { /*медиа большего размера пикселей должен быть написан первым медиа*/
+   #content-wrap {
+       margin:0 15px;
+
+   }
+}
+
+footer {
+    background: #000000d9;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+@media(max-width: 800px) {   /*для всего что будет большо 80 пикселей, стиль медиа не будет работать*/
+    header ul, #content, #sidebar {  /*801 пиксель и более - будет работать этот стиль-родитель*/
+        width: 100%;
+        padding:0 0 15px 0;
+    }
+
+    header ul li, #logo {
+        width: 100%;
+        text-align: center; /*текс в кнопке будет по центру, если кнопка=тип блок*/
+     }
+     .border {
+         min-height: 0;
+     }
+}
+ 
